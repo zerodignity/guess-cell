@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, .timer {
+    text-align: center;
+    max-width: 562px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+.start, .try-again {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: green;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+.try-again {
+    display: none;
+    max-width: 110px;
+    background-color: red;
+    text-decoration: none;
+}
+
+.table {
+    margin: 0 auto;
+    border: 3px solid #333333;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    transition: 0.2s;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.timer span {
+    color: green;
+    font-size: 18px;
+}
+
+.animated-element {
+    display: inline-block;
+    color: red !important;
+    animation: scaleAnimation 0.5s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
